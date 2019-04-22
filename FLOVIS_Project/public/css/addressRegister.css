@@ -1,0 +1,226 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    width: 1000px;
+    height: 470px;
+    display: block;
+    margin: 130px auto 0 auto;
+}
+
+.title {
+    font-weight: 200;
+    border-bottom: 3px solid #c9c9c9;
+    padding-left: 7px;
+
+    width: 1000px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 100px;
+    font-size: 23px;
+
+}
+
+
+dt {
+    /*左に寄せる*/
+    float: left;
+    /*後続の左寄せを解除*/
+    clear: left;
+    /*margin-right: 0.5em;*/
+    width: 250px;
+    /*margin: 1em 3em 2em 10em;*/
+    margin: 15px 0 30px 250px;
+    /*text-align: center;*/
+    font-size: 20px;
+}
+
+dd {
+    float: left;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+
+.error {
+    font-size: 16px;
+    color: #ff4040;
+
+}
+
+div.form {
+    height: 100%;
+
+    text-align: center;
+    clear: left;
+}
+
+input.input_form {
+    margin: 7px 0 7px 0;
+    /*opacity: 0;*/
+    background-color: rgba(0,0,0,0);
+    font-size: 16px;
+    font-weight: 200;
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: solid 1px #222;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    border-radius: 5px;
+
+    transition: 0.4s;
+}
+
+.zipmark {
+    font-size: 17px;
+}
+
+input.input_inp8 {
+    width: 50px;
+}
+
+input.input_inp8::placeholder {
+    color: rgb(75,75,75);
+    font-size: 17px;
+}
+
+input.input_inp8:focus {
+    font-weight: 300;
+    font-size: 25px;
+    width: 100px;
+    height: 40px;
+    background-color: #d4edda;
+}
+
+input.input_inp8:focus::placeholder {
+    font-size: 17px;
+}
+
+
+
+
+
+input.input_inp12 {
+    width: 70px;
+}
+
+input.input_inp12::placeholder {
+    font-size: 16px;
+}
+
+input.input_inp12:focus {
+    font-weight: 300;
+    font-size: 25px;
+    width: 130px;
+    height: 40px;
+    background-color: #d4edda;
+}
+
+
+
+
+
+
+input.input_inp9 {
+    width: 150px;
+}
+
+input.input_inp9::placeholder {
+    font-size: 14px;
+}
+
+input.input_inp9:focus {
+    font-weight: 300;
+    font-size: 25px;
+    width: 250px;
+    height: 45px;
+    background-color: #d4edda;
+}
+
+
+
+
+
+input.input_inp13 {
+    width: 150px;
+}
+
+input.input_inp13::placeholder {
+    font-size: 14px;
+}
+
+input.input_inp13:focus {
+    font-weight: 300;
+    font-size: 25px;
+    width: 250px;
+    height: 45px;
+    background-color: #d4edda;
+}
+
+
+
+input.input_inp10 {
+    width: 150px;
+}
+input.input_inp10::placeholder {
+    font-size: 14px;
+}
+input.input_inp10:focus {
+    font-weight: 300;
+    font-size: 25px;
+    width: 250px;
+    height: 45px;
+    background-color: #d4edda;
+}
+
+
+
+input.input_inp11 {
+    width: 150px;
+}
+input.input_inp11::placeholder {
+    font-size: 14px;
+}
+input.input_inp11:focus {
+    font-weight: 300;
+    font-size: 25px;
+    width: 250px;
+    height: 45px;
+    background-color: #d4edda;
+}
+
+
+
+
+button.btn {
+    cursor: pointer;
+    height: 50px;
+    width: 230px;
+    outline: none;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    display: inline-block;
+    margin: 50px 60px 0 0;
+    border-radius: 10px;
+    border: solid 1px #222;
+    box-shadow: 2px 2px 2px rgba(75,75,75,0.2);
+
+    transition: 0.7s;
+}
+
+footer {
+    padding-top: 40px;
+}
+

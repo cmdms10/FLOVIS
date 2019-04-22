@@ -1,0 +1,284 @@
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(248, 248, 248);
+}
+
+main {
+    width: 100%;
+    max-height: 2050px;
+    margin: 0 0 70px 0;
+}
+
+.center {
+    width: 1000px;
+    display: block;
+    margin: 130px auto 0 auto;
+}
+
+dt {
+    /*左に寄せる*/
+    float: left;
+    /*後続の左寄せを解除*/
+    clear: left;
+    /*margin-right: 0.5em;*/
+    /*width: 260px;*/
+    /*margin: 0 3em 2em 14em;*/
+    margin: 25px 0 0 0;
+    /*padding: 10px 0;*/
+    /*text-align: center;*/
+    font-size: 20px;
+    /*padding: 40px;*/
+    /*background-color: #f5c6cb;*/
+}
+
+dd {
+
+    float: left;
+    /* margin-left: 1em; */
+    margin: 25px 10px 0 10px;
+    border: none;
+    font-size: 20px;
+}
+
+
+img.productTitle {
+    width: 1000px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 100px;
+    border: solid 1px #222;
+    /*margin: 0 auto;*/
+    /*text-align: center;*/
+    /*display: block;*/
+    /*background-position: center center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*height: 100vh;*/
+}
+
+.product {
+    width: 243px;
+    /*height: 232px;*/
+}
+
+.hoge {
+    width: 243px;
+    height: 232px;
+    overflow: hidden;
+}
+
+
+a.item {
+    overflow: hidden;
+    color: #222222;
+}
+
+.item img {
+    overflow: hidden;
+    display: block;
+    transition-duration: 0.3s;	/*変化に掛かる時間*/
+}
+
+.item img:hover {
+    transform: scale(1.1);	/*画像の拡大率*/
+    transition-duration: 0.3s;	/*変化に掛かる時間*/
+}
+
+
+
+
+/*img.product:hover {*/
+    /*transform: scale(1.1);	!*画像の拡大率*!*/
+    /*transition-duration: 0.3s;	!*変化に掛かる時間*!*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+ul.itemList > a {
+    display: block;
+
+}
+
+
+
+
+
+
+
+
+div.list {
+    width: 100%;
+    height: 80px;
+    /*background-color: lightgreen;*/
+}
+
+
+form.form {
+    /*margin: 0 -30px 0 50px;*/
+    /*background-color: lightblue;*/
+    display: inline;
+    float: left;
+
+}
+
+
+button.btn {
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 200;
+    border-radius: 5px;
+    color: #222222;
+    background-color: rgb(248, 248, 248);
+    border: none;
+
+}
+
+
+
+
+span.sort {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #072825;
+    /*color: #e8e8e8;*/
+}
+
+
+button.sort1.sort1.sort3.sort4 {
+
+    display: inline;
+}
+
+
+
+
+ul.itemList {
+    text-align: center;
+    display: flex;
+    /*background-color: #ddffdd;*/
+    /*flex-direction: row;*/
+    flex-wrap: wrap;
+    /*width: 900px;*/
+
+}
+
+.msg {
+    width: 100%;
+    /*background-color: #ffcb8a;*/
+    text-align: right;
+}
+
+li.list {
+    /*float: left;*/
+    background-color: #fff;
+    box-shadow: 2px 2px 2px rgba(75,75,75,0.4);
+    padding: 5px 10px 10px;
+    margin: 5px auto 30px auto;
+    /*margin: 5px 1px 30px 25px;*/
+    width: 24%;
+}
+
+
+ul.pagination {
+    margin-left: 300px;
+}
+
+
+
+
+
+
+
+.next {
+
+    width: 100%;
+    height: 38px;
+    padding: 0 0 0 0;
+    margin: 20px 0 0 0;
+    text-align: center;
+    /*background-color: #ffcb8a;*/
+    /*margin: 0 0 0 -150px;*/
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    /*margin-left: -1px;*/
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 50%;
+    /*border-color: #222;*/
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px 0 5px;
+    /*width: 30px;*/
+    float: left;
+}
+
+
+.page-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #dee2e6
+}
+
+.page-link:focus {
+    z-index: 2;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+}
+
+.page-link:not(:disabled):not(.disabled) {
+    cursor: pointer
+}
+
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6
+}
+
+.pagination-lg .page-link {
+    padding: .75rem 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5
+}
+
+
+.pagination-sm .page-link {
+    padding: .25rem .5rem;
+    font-size: .7875rem;
+    line-height: 1.5
+}
+
+
+
+
+

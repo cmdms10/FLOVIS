@@ -1,0 +1,159 @@
+@charset"utf-8";
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    /*font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",sans-serif;*/
+    background-image: url("../images/flovis_background_image.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 1400px;
+    /*background-color: #acacac;*/
+}
+
+.title {
+    color: #222;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    /*margin: 0 auto;*/
+    margin: 0 auto 50px auto;
+    /*margin: 0 0 30px 30px ;*/
+    /*background-color: #00bcd4;*/
+    /*border-bottom: medium solid #acacac;*/
+}
+
+.title span {
+    padding: 20px ;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.explain {
+    display: block;
+    width: 500px;
+    padding: 20px;
+    /*height: 100%;*/
+    margin: 0 auto 30px auto;
+    /*margin-bottom: 30px;*/
+    background-color: white;
+}
+
+/*枠線*/
+#contents {
+    width: 100%;
+    margin: 0 auto;
+    /*background-color: #acacac;*/
+}
+
+.tbl_form {
+    display: table;
+    width: 1000px;
+    /*height: 1060px;*/
+    margin: 0 auto;
+    border: none;
+    /*border: 1px solid #acacac;*/
+    /*background-color: lightgreen;*/
+}
+
+.tbl_form > dl {
+    display: table-row;
+}
+
+.tbl_form > dl > dt {
+    display: table-cell;
+    color: #222;
+    width: 350px;
+    height: 40px;
+    padding: 20px 0 20px 20px;
+    /*border-radius: 25px 0 0 0;*/
+    background-color: rgba(255,182,193,0.8);
+    /*background: lightpink;*/
+    vertical-align: middle;
+    text-align: right;
+
+    font-size: 17px;
+    letter-spacing: 1px;
+    /*line-height: 1.6;*/
+    /*border-right: 1px solid #acacac;*/
+    /*border-bottom: 1px solid #acacac;*/
+}
+
+/*フォーム枠丸める*/
+.dt_left_top {
+    border-radius: 25px 0 0 0 ;
+}
+.telspace {
+    border-radius: 0 0 0 25px ;
+}
+.dd_right_top {
+    border-radius: 0 25px 0 0 ;
+}
+.dd_right_bottom {
+    border-radius: 0 0 25px 0 ;
+}
+
+
+.tbl_form > dl > dd {
+    display: table-cell;
+    width: 900px;
+    /*background-color: white;*/
+    background-color: rgba(255,255,255,0.8);
+    padding: 25px 0 15px 20px;
+    font-size: 25px;
+    /*vertical-align: middle;*/
+    /*border-bottom: 1px solid #acacac;*/
+}
+
+li.address {
+    list-style: none;
+}
+
+
+.nonstyle {
+    list-style-type: none;
+}
+
+.msg {
+    margin-top: 20px;
+}
+
+span {
+    /*position: relative;*/
+    /*top: 20px;*/
+}
+
+.btn_space {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn {
+    font-size: 30px;
+    color: white;
+    margin: 0 20px;
+    padding: 15px 160px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ef93b6;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 7px #e55089;
+    outline: none;
+}
+
+.btn:hover{
+    background-color: #ff79af;
+}
+
+.btn:active{
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
+

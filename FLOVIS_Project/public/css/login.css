@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300");
+
+body {
+    /*background-image: url("../images/flovis_background_image.jpg");*/
+    /*background-attachment: fixed;*/
+    /*background-size: cover;*/
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    width: 800px;
+    height: 100%;
+    display: block;
+    margin: 100px auto 0 auto;
+
+}
+
+.title {
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #4b4b4b;
+
+    display: block;
+    position: relative;
+    top: 190px;
+}
+
+form.loginForm {
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 0 38px 0;
+    width: 800px;
+    /*border: solid 1px #222;*/
+    /*border-radius: 10px;*/
+    /*box-shadow: 0px 20px 40px rgba(75,75,75,0.4);*/
+    /*background-color: white;*/
+}
+
+input.inputForm {
+    /*border: solid 1px rgba(75, 75, 275, 0.4);*/
+    background-color: #f2f2f2;
+    display: block;
+    text-align: left;
+    /*margin: 0 auto;*/
+    /*background-color: rgba(255, 255, 255, 0.2);*/
+    width: 300px;
+    height: 45px;
+    font-size: 18px;
+    /*background-color: #fff;*/
+    outline: none;
+    border: none;
+    border-bottom: solid 1px #222;
+    /*border-top: none;*/
+    /*border-left: none;*/
+    /*border-right: none;*/
+    /*box-shadow:0px 0px 8px 3px rgba(75,75,75,0.2) inset;*/
+    border-radius: 0 5px 5px 0;
+
+    transition-duration: 0.4s;
+}
+
+input.inputForm::placeholder {
+    padding: 0 0 0 10px;
+    font-size: 16px;
+}
+
+input.inputForm:hover {
+    background-color: #e1e1e1;
+}
+
+input.inputForm:focus {
+    /*font-size: 20px;*/
+    height: 45px;
+    /*background-color: rgba(128,255,128,0.5);*/
+    /*border: solid 1px rgb(128,255,128);*/
+    background-color: #f2f2f2;
+}
+
+input.inputForm:focus::placeholder {
+    opacity: 0;
+}
+
+div.mail {
+    padding: 0 10px 0 10px;
+    background-color: #f2f2f2;
+    font-size: 30px;
+    float: left;
+}
+
+div.pass {
+    padding: 0 10px 0 10px;
+    background-color: #f2f2f2;
+    font-size: 30px;
+    float: left;
+}
+
+
+
+
+
+
+
+.ok::after {
+    font-family: "FontAwesome";
+    content: "\f007";
+}
+
+
+
+
+
+
+
+
+
+input#email {
+    margin-top: 20px;
+}
+
+span.pwStore {
+    text-align: left;
+}
+
+div.form {
+    margin: 0 auto;
+    width: 45%;
+}
+
+input.form-check-label{
+    display: block;
+    margin: 0 auto;
+}
+
+button.btnForm {
+    background-color: rgba(128,255,128,0.5);
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgba(13,13,13,0.6);
+    outline: none;
+    /*font-weight: bolder;*/
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto 0 auto;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+button:hover {
+    color: rgba(13,13,13,1);
+    background-color: rgba(128,255,128,1);
+}
+
+div.option {
+    margin: 0 auto;
+    width: 35%;
+    /*background-color: #efa2a9;*/
+}
+
+p.str1,.str2 {
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: left;
+    line-height: 30px;
+}
+p.str1 {
+    margin-top: 10px;
+}
+
+p.str1 > a {
+    color: #00a0e9;
+    text-decoration: none;
+}
+
+p.str1 > a:hover {
+    color: rgba(0,160,233,0.8);
+}
+
+p.str2 > a {
+    text-decoration: none;
+    color: #00a0e9;
+}
+
+p.str2 > a:hover {
+    color: rgba(0,160,233,0.6);
+}
+
+
+.error {
+    font-size: 14px;
+    color: red;
+
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #acacac;
+}
+
+img.footerIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.insta {
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.footermsg {
+    font-size: 16px;
+}
+
+
+

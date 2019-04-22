@@ -1,0 +1,519 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*商品詳細*/
+.center {
+    z-index: auto;
+
+    width: 1000px;
+    max-height: 1900px;
+    display: block;
+    margin: 130px auto 0 auto;
+
+}
+
+.center2 {
+    width: 1000px;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.title {
+    /*font-family: 'Quicksand', sans-serif;*/
+    /*margin: 40px 0 14px 20px;*/
+    font-weight: 200;
+    border-bottom: 3px solid #c9c9c9;
+    padding-left: 7px;
+    /*position: relative;*/
+
+    width: 1000px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 100px;
+    /*border: solid 1px #222;*/
+
+}
+
+.title h1 {
+    font-size: 27px;
+    font-weight: 200;
+    padding-left: 7px;
+}
+
+a.mainImg {
+    display: block;
+}
+
+img.main {
+    display: block;
+    width: 640px;
+    height: 640px;
+    float: left;
+    margin: 0 0 0 20px;
+}
+
+img.product {
+    /*float: left;*/
+    cursor: pointer;
+    margin: 0 0 0 50px;
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+.content {
+    clear: left;
+    /*text-align: center;*/
+    width: 100%;
+    max-height: 1200px;
+    /*background-color: #ddffdd;*/
+}
+
+.content > h3 > p.description {
+    width: 800px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+
+
+
+
+
+
+
+.content h3 {
+    overflow: hidden;
+    text-align: center;
+    font-size: 120%;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.content h3 span {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    padding: 40px 20px 20px 20px;
+}
+
+
+.content h3 span:before,
+.content h3 span:after {
+    border-top: 1px solid #75b0c0;
+    content: "";
+    position: absolute;
+    top: 60%;
+    width: 99em;
+}
+
+h3 span:before {
+    right: 100%;
+}
+
+h3 span:after {
+    left: 100%;
+}
+
+.content h3 p {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 17.5px;
+    width: 1000px;
+}
+
+
+/*img.active:hover {*/
+    /*border: solid 1px #222;*/
+/*}*/
+
+
+
+hr.pill {
+    /*height:0;*/
+    margin-top: 70px;
+    border-radius: 2px;
+    border: 2px solid hsl(193,37%,61%);
+    width: 100%;
+}
+
+
+div.price {
+    margin: 30px 0 0 0;
+}
+span.price {
+    /*margin: 0 auto;*/
+    display: block;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    /*background-color: #71dd8a;*/
+}
+
+div.productNum {
+    margin: 10px 0 0 0;
+}
+
+span.productNum {
+    display: block;
+    margin: 0 0 0 30px;
+    font-size: 20px;
+    font-weight: 200;
+    /*background-color: #71dd8a;*/
+}
+
+div.total {
+    /*height: 200px;*/
+    margin-top: 50px;
+    /*background-color: #ffcb8a;*/
+}
+
+
+
+.form {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    /*background-color: #d4edda;*/
+}
+.form span {
+     font-size: 25px;
+}
+
+.form select {
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    width: 500px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 5px;
+    /*border: none;*/
+    text-align: center;
+}
+
+.form select:focus {
+    outline: solid 4px orange;
+    border-radius: 5px;
+}
+.btn_space {
+    margin: 70px 0 0 0;
+    text-align: center;
+}
+.btn {
+    outline: none;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    height: 70px;
+    width: 800px;
+    background-color: #f5c6cb;
+    border-radius: 10px;
+    color: #222222;
+    box-shadow: 2px 2px 2px rgba(75,75,75,0.2);
+
+    transition: .3s;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ffa3b4;
+}
+
+span.btnMessage {
+    font-size: 30px;
+    font-weight: 100;
+    color: #555;
+}
+
+a.site {
+    text-decoration: none;
+    color: #6fbbd3;
+}
+
+
+
+/*商品レビュー*/
+.reviewRange {
+    width: 100%;
+    height: 100%;
+    /*height: 1020px;*/
+
+    margin-top: 50px;
+    /*background-color: #f5c6cb;*/
+}
+
+.reviewRange h3 {
+    margin: 0 0 0 40px;
+    font-size: 25px;
+    font-weight: 100;
+    border-bottom: 3px solid #acacac;
+}
+
+.commentForm {
+    margin: 20px auto 0 auto;
+    width: 700px;
+    /*height: 200px;*/
+    /*background-color: #ddffdd;*/
+}
+
+textarea {
+    border-radius: 10px;
+    width: 100%;
+    height: 120px;
+    padding-top: 5px;
+    font-size: 20px;
+    outline: none;
+    resize: none;
+}
+
+textarea:focus {
+    /*background-color: #f5c6cb;*/
+    border: solid 1px orange;
+}
+
+button.cmtBtn {
+    margin: 20px 20px 0 0;
+    float: right;
+    width: 200px;
+    height: 50px;
+    outline: none;
+    font-weight: 200;
+    font-size: 18px;
+    border-radius: 10px;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+button.cmtBtn:hover {
+
+}
+
+div.reviewList {
+    /*margin-top: 70px;*/
+    clear: right;
+    width: 100%;
+    height: 100%;
+    /*background-color: #b3d7ff;*/
+    /*border-bottom: solid 5px #ffcb8a;*/
+    margin: 70px 0 0 0;
+}
+
+div.reviewSpace {
+    width: 100%;
+    height: 300px;
+    /*background-color: red;*/
+    overflow: scroll;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+.review {
+    width: 80%;
+    margin: 25px auto 0 auto;
+    /*margin: 30px 0 0 50px;*/
+    border-bottom: solid 0.5px #2b2b2b;
+    /*border: solid 2px #222;*/
+    /*border-right: none;*/
+    /*border-left: none;*/
+    /*border-top: none;*/
+
+}
+
+
+
+div.review:last-child {
+    border: none;
+}
+
+p.commentContent {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+.border {
+    /*border: solid 1px ;*/
+    border: 2px solid hsl(193,37%,61%);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 40px;
+    border-radius: 2px;
+
+    width: 90%;
+}
+
+dt {
+    /*/左に寄せる/ */
+    float: left;
+    /*/後続の左寄せを解除/ */
+    clear: left;
+    /*margin-right: 0.5em;*/
+    width: 150px;
+    margin: 0 0 10px 335px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+    /*padding: 40px;*/
+    /*background-color: #f5c6cb;*/
+}
+
+dd {
+    float: left;
+    margin-left: 80px;
+    font-size: 20px;
+
+    /*background-color: #9dc671;*/
+}
+
+
+
+
+
+
+
+.next {
+    width: 100%;
+    height: 38px;
+    padding: 0 0 0 0;
+    margin: 20px 0 20px 0;
+    text-align: center;
+    /*background-color: #ffcb8a;*/
+    /*margin: 0 0 0 -150px;*/
+}
+
+ul.itemList {
+    text-align: center;
+    display: flex;
+    /*background-color: #ddffdd;*/
+    /*flex-direction: row;*/
+    flex-wrap: wrap;
+    /*width: 900px;*/
+
+}
+
+.msg {
+    width: 100%;
+    /*background-color: #ffcb8a;*/
+    text-align: right;
+}
+
+li.list {
+    /*float: left;*/
+    background-color: #fff;
+    box-shadow: 1px 2px 3px #CCC;
+    padding: 5px 10px 10px;
+    margin: 5px auto 30px auto;
+    /*margin: 5px 1px 30px 25px;*/
+    width: 24%;
+}
+
+
+
+
+ul.pagination {
+    margin-left: 400px;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    /*margin-left: -1px;*/
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 50%;
+    /*border-color: #222;*/
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px 0 5px;
+    /*width: 30px;*/
+    float: left;
+}
+
+
+.page-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #dee2e6
+}
+
+.page-link:focus {
+    z-index: 2;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+}
+
+.page-link:not(:disabled):not(.disabled) {
+    cursor: pointer
+}
+
+
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6
+}
+
+.pagination-lg .page-link {
+    padding: .75rem 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5
+}
+
+
+.pagination-sm .page-link {
+    padding: .25rem .5rem;
+    font-size: .7875rem;
+    line-height: 1.5
+}
+
+.posted {
+    font-size: 14px;
+}
+
+.cmtUser {
+    font-size: 18px;
+}
+
+.commentContent {
+    font-size: 18px;
+}
+
+.error {
+    color: #dd4f4f;
+}
+

@@ -1,0 +1,403 @@
+@charset"utf-8";
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    /*font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",sans-serif;*/
+    background-image: url("../images/flovis_background_image.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 1400px;
+    /*background-color: #acacac;*/
+}
+
+
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 100;
+    /*background-color: white;*/
+    background-color: rgba(255,255,255,0.9);
+}
+
+.logo {
+    height: 60px;
+    display: inline;
+    margin-left: 45px;
+    /*background-color: #00bcd4;*/
+}
+.instagramIcon {
+    width: 30px;
+    /*height: 30px;*/
+    margin: -50px auto 0 auto;
+}
+
+.drawer-nav {
+    text-align: center;
+}
+
+.drawer-toggle {
+    position: absolute;
+    top: -20px;
+}
+
+.drawer-menu-item {
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.user {
+    width: 170px;
+    height: 60px;
+    display: inline;
+    float: right;
+    background-color: lightpink;
+}
+
+.userIcon  {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.usermenu {
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+.cart {
+    width: 120px;
+    height: 60px;
+    display: inline;
+    float: right;
+    background-color: lightblue;
+}
+
+.search {
+    width: 300px;
+    height: 60px;
+    display: inline;
+    float: right;
+    background-color:yellowgreen;
+}
+
+.input_search {
+    font-size: 20px;
+    line-height: 20px;
+
+    width: 230px;
+    height: 40px;
+
+    position: relative;
+    top: -14px;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #222;
+    border-radius: 5px;
+    outline: none;
+
+    /*top: 5px;*/
+    /*: 50px;*/
+}
+
+
+.searchBtn {
+    margin-top: 10px;
+    outline: none;
+    /*position: relative;*/
+    /*left: 220px;*/
+    /*!*opacity: 0;*!*/
+    /*background-color: rgba(0,0,0,0);*/
+    border: none;
+}
+.searchIcon {
+    width: 40px;
+    border: none;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.explain {
+    display: block;
+    width: 500px;
+    padding: 20px;
+    /*height: 100%;*/
+    margin: 0 auto 30px auto;
+    /*margin-bottom: 30px;*/
+    background-color: white;
+}
+
+/*枠線*/
+#contents {
+    width: 100%;
+    /*margin: 70px auto 0 auto;*/
+    /*background-color: #acacac;*/
+}
+
+.main {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto 30px auto;
+    padding-top: 100px;
+    /*background-color: aqua;*/
+}
+
+.title {
+    color: #222;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    /*margin: 0 auto;*/
+    margin: 0 auto 50px auto;
+    /*margin: 0 0 30px 30px ;*/
+    /*background-color: #00bcd4;*/
+    /*border-bottom: medium solid #acacac;*/
+}
+
+.title span {
+    padding: 20px ;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.tbl_form {
+    display: table;
+    width: 1000px;
+    /*height: 1060px;*/
+    margin: 0 auto;
+    border: none;
+    /*border: 1px solid #acacac;*/
+    /*background-color: lightgreen;*/
+}
+
+.tbl_form > dl {
+    display: table-row;
+}
+
+.tbl_form > dl > dt {
+    display: table-cell;
+    color: #222;
+    width: 350px;
+    height: 40px;
+    padding: 20px 0 20px 20px;
+    /*border-radius: 25px 0 0 0;*/
+    background-color: rgba(255,182,193,0.8);
+    /*background: lightpink;*/
+    vertical-align: middle;
+    text-align: right;
+
+    font-size: 17px;
+    letter-spacing: 1px;
+    /*line-height: 1.6;*/
+    /*border-right: 1px solid #acacac;*/
+    /*border-bottom: 1px solid #acacac;*/
+}
+
+/*フォーム枠丸める*/
+.dt_left_top {
+    border-radius: 25px 0 0 0 ;
+}
+.telspace {
+    border-radius: 0 0 0 25px ;
+}
+.dd_right_top {
+    border-radius: 0 25px 0 0 ;
+}
+.dd_right_bottom {
+    border-radius: 0 0 25px 0 ;
+}
+
+
+.tbl_form > dl > dd {
+    display: table-cell;
+    width: 900px;
+    /*background-color: white;*/
+    background-color: rgba(255,255,255,0.8);
+    padding: 0 0 15px 20px;
+    font-size: 15px;
+    /*border-bottom: 1px solid #acacac;*/
+}
+
+
+/*インプットタグ*/
+
+.input_form {
+    font-size: 20px;
+    /*font-size: 0.875em;*/
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 5px;
+    /*padding: 0 0 0 5px;*/
+    position: relative;
+    top: 20px;
+    width: 200px;
+    height: 50px;
+
+    /*background: transparent;*/
+    background-color: rgba(255, 221, 221, 0.7);
+    /*background-color: lightblue;*/
+    outline: none;
+    color: #726659;
+
+    /*border:solid 2px #b3aca7;*/
+    border-top: none;
+    border-right: none;
+    /*!*border-bottom: none;*!*/
+    border-left: none;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    /*border-bottom: solid 4px #b3aca7;*/
+    border-radius: 17px 17px 17px 17px;
+
+    transition: all 0.3s ease-in-out;
+    /*-webkit-transition: all 0.3s ease-in-out;*/
+    /*-moz-transition: all 0.3s ease-in-out;*/
+    /*-ms-transition: all 0.3s ease-in-out;*/
+}
+.input_form:hover {
+    background: lightpink;
+    color: black;
+}
+
+.input_inp1 {
+    width: 300px;
+}
+
+.input_inp2 {
+    margin-right: 20px;
+}
+
+.input_inp4 {
+    margin-bottom: 20px;
+    width: 300px;
+}
+.input_inp5 {
+    width: 300px;
+}
+
+.input_inp6 {
+    width: 425px;
+}
+.input_inp7 {
+    width: 400px;
+}
+.input_inp8 {
+    height: 40px;
+    width: 60px;
+}
+.input_inp9 {
+    width: 250px;
+}
+.input_inp10 {
+    width: 425px;
+}
+.input_inp11 {
+    height: 40px;
+    width: 300px;
+}
+.input_inp12 {
+    /*letter-spacing: 1px;*/
+    height: 40px;
+    width: 100px;
+}
+
+.input_form::placeholder {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.input_form::value {
+    line-height: 15px;
+}
+
+.nonstyle {
+    list-style-type: none;
+}
+
+.msg {
+    margin-top: 20px;
+}
+
+span {
+
+    position: relative;
+    top: 20px;
+}
+
+.btn_space {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn {
+    font-size: 30px;
+    color: white;
+    padding: 15px 260px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ef93b6;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 7px #e55089;
+    outline: none;
+}
+
+.btn:hover{
+    background-color: #ff79af;
+}
+
+.btn:active{
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
+.auto_input {
+    display: inline-block;
+    background-color: red;
+    text-align: center;
+    vertical-align: middle;
+    width: 160px;
+    height: 50px;
+    padding-top: 20px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+span.error {
+    color: red;
+}

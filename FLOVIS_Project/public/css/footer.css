@@ -1,0 +1,247 @@
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+span.name {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+h2.footer__shop--title {
+    font-size: 14px;
+}
+
+.footer__menu {
+    background-color: #f7f7f7;
+}
+
+.footer__menu li + li {
+    margin-top: 3.57%;
+}
+
+.footer__menu li a {
+    width: 100%;
+    position: relative;
+    display: block;
+    padding: 4.3% 0 4.3% 0;
+    font-size: 2.0rem;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer__menu--lower li a {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border: 1px solid transparent;
+}
+
+.footer__menu--lower li a span.label {
+    font-size: 3.6rem;
+    letter-spacing: 0.1em;
+}
+
+@media screen and (min-width: 769px) {
+    .footer__inside {
+        width: 1120px;
+        margin: 0 auto;
+        padding: 120px 0 40px 0;
+        overflow: hidden;
+    }
+
+    .footer__info {
+        color: #dddddd;
+        background-color: #333333;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .footer__shop {
+        font-size: 2.0rem;
+        line-height: 1.6;
+        box-sizing: border-box;
+    }
+
+    .footer__shop--title {
+        margin-bottom: 5.7%;
+        font-weight: 200;
+    }
+
+    .footer__shop--title .name {
+        font-size: 3.2rem;
+    }
+
+    .footer__link {
+        overflow: hidden;
+        font-size: 2.8rem;
+        line-height: 2;
+        box-sizing: border-box;
+    }
+
+    .footer__link .external:after {
+        content: '';
+        display: inline-block;
+        vertical-align: 1px;
+        width: 6px;
+        height: 5px;
+        margin-left: 6px;
+        background-size: 100% auto;
+    }
+
+    .footer__column {
+        float: left;
+    }
+
+    @media screen and (max-width: 768px) {
+        .footer__shop,
+        .footer__link {
+            padding: 6.25%;
+        }
+
+        .footer__shop {
+            padding: 6.25% 0;
+            margin: 0 6.25%;
+            border-bottom: 1px solid #999999;
+        }
+
+        .footer__column {
+            width: 50%;
+        }
+
+        .footer__column:nth-child(3) {
+            clear: both;
+            margin-top: 5.3%;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .footer__info {
+            overflow: hidden;
+            /*background-image: url(../../images/common/footer/bg_pc.jpg);*/
+        }
+
+        .footer__shop,
+        .footer__link {
+            width: 55%;
+            float: left;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .footer__link {
+            width: 45%;
+        }
+
+        .footer__shop--title {
+            margin-bottom: 25px;
+        }
+
+        .footer__shop--title .name {
+            font-size: 18px;
+        }
+
+        .footer__link {
+            line-height: 2;
+        }
+
+        .footer__link {
+            font-size: 14px;
+        }
+
+        .footer__link .external:after {
+            vertical-align: -1px;
+            width: 12px;
+            height: 10px;
+        }
+
+        .footer__column {
+            width: 25%;
+        }
+    }
+
+    .footer__aside {
+        position: relative;
+        padding: 6.25%;
+    }
+
+    .footer__copyright {
+        font-size: 2.4rem;
+    }
+
+    .footer__pagetop {
+        position: fixed;
+        width: 14%;
+        bottom: 20px;
+        bottom: 6.25vw;
+        right: 20px;
+        right: 6.25vw;
+        transition: .4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: translate3d(0, 200%, 0);
+        transform: translate3d(0, 200%, 0);
+    }
+
+    .footer__pagetop.is-visible {
+        -webkit-transform: translate3d(0, 0, 0);
+        /*instagram . com Flovis_PJ (@flovis_pj) • Instagram photos and videos 0 Followers, 0 Following, 8 Posts - See Instagram photos and videos from Flovis_PJ (@flovis_pj) transform: translate3d(0, 0, 0);*/
+    }
+
+    .footer__pagetop.is-hidden {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 200%, 0);
+        transform: translate3d(0, 200%, 0);
+    }
+
+    .footer__pagetop a {
+        display: block;
+        width: 100%;
+        height: 0;
+        padding-top: 100%;
+        /*background: #111111 url("../../images/other/arrow/top_off.png") center center no-repeat;*/
+        background-size: 26% auto;
+        border-radius: 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+        .footer__pagetop a {
+            background-size: 26% auto;
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        .footer__aside {
+            width: 1120px;
+            margin: 0 auto;
+            padding: 0 0 2em 0;
+            overflow: hidden;
+        }
+
+        .footer__copyright {
+            font-size: 14px;
+        }
+
+        .footer__pagetop {
+            width: 70px;
+            bottom: 40px;
+            right: 40px;
+            -webkit-transform: translate3d(0, 120px, 0);
+            transform: translate3d(0, 120px, 0);
+            transition-duration: .5s;
+        }
+
+        .footer__pagetop.is-hidden {
+            -webkit-transform: translate3d(0, 120px, 0);
+            transform: translate3d(0, 120px, 0);
+        }
+
+        .footer__pagetop a {
+            transition: .15s;
+        }
+
+        .footer__pagetop a:hover {
+            background-color: #fffd44;
+            /*background-image: url("../../images/other/arrow/top_on.png");*/
+        }
+    }
+}

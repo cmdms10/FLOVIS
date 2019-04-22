@@ -1,0 +1,448 @@
+@charset "utf-8";
+/*@import url('https://fonts.googleapis.com/css?family=Quicksand');*/
+
+* {
+    font-family: "Noto Sans Japanese", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    /*font-family: 'Quicksand', sans-serif;*/
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(248, 248, 248);
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    /*background-color: #40cddf;*/
+    /*background-color: rgba(255,255,255,0.85);*/
+    /*background-color: rgba(75,75,75,0.3);*/
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+
+}
+
+
+/*ハンバーガーメニュー*/
+
+a.drawer-menu-item {
+    cursor: pointer;
+    z-index: 11;
+}
+
+a.drawer-menu-item {
+
+    position: relative;
+    /*background-color: #b8daff;*/
+    text-align: center;
+    margin: 0 auto;
+}
+
+ul.drawer-menu > li > a.drawer-menu-item > span.en {
+    text-align: center;
+}
+
+.en,.ja {
+    display: block;
+    width: 100%;
+    /*background-color: #9dc671;*/
+    position: absolute;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.en {
+    position: absolute;
+    right: 3px;
+    opacity: 1;
+}
+
+.ja {
+    position: relative;
+    opacity: 0;
+    text-decoration: none;
+}
+
+a:hover .en{
+    opacity: 0;
+}
+
+a:hover .ja {
+    opacity: 1;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+img.instagramIcon {
+    width: 30px;
+}
+img.color {
+    /*position: absolute;*/
+    /*left: 7px;*/
+}
+
+
+/*ロゴ*/
+img.logoImg {
+    height: 50px;
+    position: fixed;
+    left: 80px;
+    z-index: 11;
+}
+
+img.flovisLogo {
+    width: 170px;
+    height: 170px;
+    /*position: relative;*/
+    bottom: 0;
+    position: absolute;
+    /*position: fixed;*/
+    left: 40px;
+    /*top: 90px;*/
+}
+
+/*検索・ログイン・カート*/
+.container {
+    display: flex;
+}
+
+.search {
+    width: 370px;
+    height: 50px;
+    z-index: 11;
+    /*background-color: #3f51b5;*/
+}
+
+input.searchForm {
+    width: 250px;
+    height: 35px;
+    border: solid 1px #acacac;
+    outline: none;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+input.searchForm:focus {
+    border:solid 1px #EEA34A;
+}
+
+input.searchForm::placeholder {
+    font-size: 13px;
+    font-weight: 200;
+}
+
+/*submitボタン*/
+.bubbly-button {
+    /*font-family: 'Quicksand', sans-serif;*/
+    display: inline-block;
+    font-size: 13px;
+    padding: 9px 14px;
+    /*padding: 1em 2em;*/
+    margin-top: 9px;
+    margin-left: 10px;
+    /*margin-bottom: 60px;*/
+    -webkit-appearance: none;
+    /*appearance: none;*/
+    background-color: #ff0081;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+}
+.bubbly-button:focus {
+    outline: 0;
+}
+.bubbly-button:before, .bubbly-button:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+}
+.bubbly-button:before {
+    display: none;
+    top: -75%;
+    background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+.bubbly-button:after {
+    display: none;
+    bottom: -75%;
+    background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+.bubbly-button:active {
+    transform: scale(0.9);
+    background-color: #e60074;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+.bubbly-button.animate:before {
+    display: block;
+    animation: topBubbles ease-in-out 0.75s forwards;
+}
+.bubbly-button.animate:after {
+    display: block;
+    animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+@keyframes topBubbles {
+    0% {
+        background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+    50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+    }
+}
+@keyframes bottomBubbles {
+    0% {
+        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    }
+    50% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+    100% {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+        background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+    }
+}
+
+
+
+
+
+
+
+
+.login {
+    width: 200px;
+    height: 50px;
+    z-index: 11;
+    /*display: block;*/
+    /*background-color: #9dc671;*/
+}
+div.login > a {
+    display: block;
+    /*display: table-cell;*/
+    vertical-align: middle;
+}
+
+img.loginImg {
+    margin-left: 10px;
+    width: 40px;
+    padding-top: 5px;
+}
+
+span.loginMsg {
+    /*font-family: 'Quicksand', sans-serif;*/
+    text-decoration: none;
+    /*letter-spacing: 1px;*/
+    font-size: 20px;
+    padding-left: 5px;
+    position: absolute;
+    top: 10px;
+
+}
+
+img.userImg {
+    width: 40px;
+    padding-top: 5px;
+}
+
+span.userName {
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 5px;
+    position: absolute;
+    top: 10px;
+}
+
+
+
+
+.menu {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu > li {
+    height: 50px;
+}
+
+.menu > li a {
+    display: block;
+    color: #222;
+    width: 200px;
+}
+
+.menu > li a:hover {
+    color: #000;
+}
+
+ul.menu__second-level {
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+/*ログイン後名前ホバー*/
+.menu > li:hover {
+    background: #b8daff;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+/*横線*/
+.menu__second-level li {
+    border-top: 1px solid #fff;
+}
+
+/*ログイン後のホバー*/
+.menu__second-level li a:hover {
+    background: #b8daff;
+}
+
+
+/* 下矢印 */
+.init-bottom:after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 0 3px 10px;
+    border-right: 1px solid #222;
+    border-bottom: 1px solid #222;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* floatクリア */
+.menu:before,
+.menu:after {
+    content: " ";
+    display: table;
+}
+
+.menu:after {
+    clear: both;
+}
+
+.menu {
+    *zoom: 1;
+}
+
+.menu > li.menu__single {
+    position: relative;
+}
+
+li.menu__single ul.menu__second-level {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    background: #fff;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+li.menu__single:hover ul.menu__second-level {
+    top: 50px;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*li.item {*/
+    /*margin: 10px 0;*/
+/*}*/
+a.item {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    /*margin: 0px 0;*/
+    font-size: 16px;
+    display: block;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+.cart {
+    width: 150px;
+    height: 50px;
+    z-index: 11;
+    /*background-color: #ffcb8a;*/
+}
+a.cart {
+    transition: .7s;
+    color: #222;
+    display: block;
+}
+
+a.cart:hover {
+    background-color: #caede2;
+}
+
+
+
+
+
+img.cartImg {
+    margin-left: 10px;
+    width: 40px;
+    padding-top: 5px;
+}
+
+.cartMsg {
+    text-decoration: none;
+    /*letter-spacing: 1px;*/
+    font-size: 20px;
+    padding-left: 5px;
+    position: absolute;
+    top: 10px;
+}
+
+span.cartnum {
+    position: relative;
+    top: -5px;
+    margin: 0 0 0 5px;
+    padding: 5px 8px 5px 8px;
+    border-radius: 50%;
+    font-size: 14px;
+    background-color: #e73656;
+    color: #fff;
+}
+
