@@ -2,4 +2,4 @@
 .env
 public/images
 bootstrap
-package-log.json
+package-lock.json
